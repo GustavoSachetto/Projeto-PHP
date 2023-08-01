@@ -72,7 +72,7 @@ p > img{
     margin: 20px;
 }
 
-a{
+section > a{
     margin: 20px;
     font: bolder 26px var(--font-link);
     padding: 15px 100px;
@@ -84,7 +84,7 @@ a{
     transition: 500ms;
 }
 
-a:hover{
+section > a:hover{
     background-color: transparent;
     color: black;
     border: 2px solid black;
