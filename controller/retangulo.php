@@ -12,8 +12,8 @@
                     $area = $altura * $largura ;
                     $perimetro = ($altura + $largura) * 2;
 
-                    echo "<h2>Área: $area </h2>";
-                    echo "<h2>Perimetro: $perimetro </h2>";
+                    echo "<h2>Área: $area</h2>";
+                    echo "<h2>Perimetro: $perimetro</h2>";
 
                 ?>
                 <a href="../view/html/atividade/retangulo.html">Voltar</a>

@@ -13,7 +13,7 @@
 
                     echo "<h2>Valor digitado: $valorReais R$</h2>";
                     echo "<p>Valor do dolar atualmente: $dolar R$</p>";
-                    echo "<p> Valor digitado convertido em dolar: $dolarCon U$</p>";
+                    echo "<p>Valor digitado convertido em dolar: $dolarCon U$</p>";
 
                 ?>
                 <a href="../view/html/atividade/dolar.html">Voltar</a>

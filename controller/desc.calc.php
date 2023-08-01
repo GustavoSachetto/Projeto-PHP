@@ -14,10 +14,10 @@
                     $desc = ($valorTotal * 10  ) /100 ;
                     $valorTotalDesc = $valorTotal - $desc;
 
-                    echo "<h2> Nome do produto: $nome </h2>";
-                    echo "<p> Valor Unitario : $valorVenda </p>";
-                    echo "<p> Valor Total Sem Desconto : $valorTotal </p>";
-                    echo "<p> Valor Total com 10% de Desconto : $valorTotalDesc </p>";
+                    echo "<h2>Nome do produto: $nome</h2>";
+                    echo "<p>Valor unitario : $valorVenda</p>";
+                    echo "<p>Valor total sem desconto: $valorTotal</p>";
+                    echo "<p>Valor total com 10% de desconto: $valorTotalDesc</p>";
 
                 ?>
                 <a href="../view/html/atividade/desc_calc.html">Voltar</a>

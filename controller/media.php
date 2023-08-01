@@ -11,8 +11,8 @@
                     $nota02 = $_POST['txtNota02'];
                     $Media = ($nota01 + $nota02) / 2;
 
-                    echo "<h2>Notas Digitadas: $nota01 , $nota02 </h2>";
-                    echo "<p>Média Calculada: $Media </p>";
+                    echo "<h2>Notas digitadas: $nota01 , $nota02</h2>";
+                    echo "<p>Média calculada: $Media</p>";
 
                 ?>
                 <a href="../view/html/atividade/media.html">Voltar</a>
