@@ -11,7 +11,7 @@
                     $PrecoVenda = ($PrecoCusto /100) *150;
                     $Lucro = ($PrecoCusto - 1.00) - 0.50;
 
-                    echo "<h2>Pretende vender o brigadeiro por : $PrecoVenda R$<h2>";
+                    echo "<h2>Pretende vender o brigadeiro por : $PrecoVenda R$</h2>";
                     echo "<p> Tendo um lucro de: $Lucro R$</p>";
 
                 ?>
