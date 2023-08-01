@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: Contrail;
+    src: url(../font/ContrailOne-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --azul: #4169E1;
+    --roxo: #5d5888;
+    --roxoescuro:#261c3f;
+    --verde:#3ca37b;
+    --cinza: #3B3B3B;
+    --cinzaclaro: #ced1ce;
+    --branco: #f0f7ee;    
+    --opacidade: #00000025;
+    --opacidade-dois: #00000057;
+    
+    --font-titulo: 'Contrail', Comic Sans MS, cursive;
+    --font-destaque: Comic Sans MS, Verdana, Arial;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-link: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --sombra: 1px 1px 20px var(--opacidade);
+}
+
+::-webkit-scrollbar{ 
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--roxo);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--opacidade);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--opacidade-dois);
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+header{
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1{
+    font: bold 3.5em var(--font-titulo);    
+    color: var(--branco);
+    text-shadow: -4px 4px 0px var(--opacidade);
+    white-space: nowrap;
+}
+
+nav > a{
+    font: bold 20px var(--font-link);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--branco);
+	background: transparent;
+	border: 1px solid transparent;
+	padding: 12px 30px;
+	border-radius: 40px;
+	transition: all .55s ease;
+}
+
+nav > a:hover{
+	transform: translateY(10px);
+}
+
+nav > a.inicio{
+	color: #5B598D;
+	background: var(--branco);
+}
+
+nav > a:hover.inicio{
+    color: var(--branco);
+	background: transparent;
+	border: 1px solid var(--branco);
+    transform: none;
+}
+
+#botaoNav{
+    width: 80px;
+    display: none;
+    border: none;
+    border-radius: 40px;
+    background: transparent;
+}
+
+#imagemBotao{
+    width: 80px;
+}
+
+body{
+    background: linear-gradient(to right, var(--azul), var(--roxo));
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main{
+    color: var(--branco);
+    font-family: var(--font-padrao);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+article > h2{
+    margin: 2%;
+    font: bolder 40px var(--font-destaque);
+    text-shadow: var(--sombra);
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: #261c3f;
+    font: normal 20px var(--font-padrao);
+    padding: 0 30px;
+	border-radius: 40px;
+    background-color: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+#botaoTopo{
+    display: none;
+    position: fixed;
+    border: none;
+    width: 80px;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1000;
+    border-radius: 40px;
+    background-color: var(--roxo);
+}
+
+#botaoTopo:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+#imagemBotaoTopo{
+    width: 80px;
+}
+
+.ativo{
+    display: flex;
+}
+
+section > h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+	color: var(--cinza);
+}
+
+.cheio{
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: bolder;
+    color: var(--cinza);
+}
+
+section > p{
+    font: normal 20px sans-serif;
+    text-shadow: var(--sombra);
+    text-align: center;
+}
+
+section > pre{
+   text-align: center;
+   font-size: 18px;
+   margin-right: 200px;
+}
+
+.entrando-txt{
+    animation: entrando-txt 1s normal;
+}
+
+@keyframes entrando-txt{
+    from{
+        transform: translateY(80%);
+        opacity: 30%;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+form{
+    margin: 50px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--cinza);
+    box-shadow: 6px 6px 20px var(--opacidade);
+}
+
+fieldset{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > h2{
+    margin-bottom: 20px;
+    font: bolder 32px Arial, var(--font-padrao); 
+    text-align: center;   
+    color: var(--cinza);
+    background-color: var(--branco);
+}
+
+fieldset > label{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+fieldset > input{
+    margin: 15px 15px 30px 15px;
+	padding: 12px 20px;
+	font-size: 20px;
+	box-shadow: 6px 6px 20px var(--opacidade);
+	border: 10px;
+	border-radius: 30px;
+    background-color: white;
+}
+
+fieldset > select{
+    margin: 15px 15px 30px 15px;
+	padding: 12px 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 6px 6px 20px var(--opacidade);
+}
+
+fieldset > hr{
+    border: 10px solid;
+    color: #0066ff;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botao > button{
+    margin: 7px;
+    font: bolder 20px var(--font-link);
+    padding: 15px 80px;
+    border-radius: 30px; 
+    text-decoration: none;
+    color: white;
+}
+
+.botao > #limpar{
+    background-color: #971010;
+}
+
+#limpar:hover{
+    background: transparent;
+    color: var(--cinza);
+    transition: 500ms;
+}
+
+.botao > #enviar{    
+    background-color: #4C89E6;
+}
+
+.botao > #enviar:active{    
+    transform: scale(2.0);
+    opacity: 10%;
+    transition: 100ms;
+}
+
+.voltar{
+    margin-bottom: 40px;
+    font: bolder 23px var(--font-link);
+    padding: 15px 100px;
+    border-radius: 30px; 
+    text-decoration: none;
+    color: white;
+    background-color: var(--verde);
+    border: 2px solid transparent;
+    transition: 500ms;
+}
+
+.voltar:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--cinza);
+    flex-shrink: 0;
+}
+
+footer > p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    font: normal 18px var(--font-link);
+}
+
+footer > a{
+    font: normal 15px var(--font-link);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 13px;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+.github{
+    width: 40px;
+    margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 0px;
+    }
+
+    #botaoNav{
+        display: block;
+    }   
+
+    nav{
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100vw;
+        padding-top: 70px;
+        height: calc(100vh - 120px);
+        text-align: center;
+        flex-direction: column;
+        z-index: 10000;
+        background: linear-gradient(to right, var(--azul), var(--roxo));
+    }
+
+    nav > a.inicio{
+        color: #515EA9;
+        margin: 100px 40px 0px 40px;
+    }
+
+    section{
+        font: normal 15px var(--font-padrao);
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    ::-webkit-scrollbar{ 
+        width: 0px;
+    }
+
+    header{
+        margin: 20px 30px;
+    }
+
+    #botaoNav{
+        width: 60px;
+    }
+    
+    #imagemBotao{
+        width: 60px;
+    }
+
+    header > h1{
+        font: bold 3.0em var(--font-titulo);    
+    }
+
+    main{
+        min-height: calc(100vh - 230px);
+    }
+
+    article > h2{
+        margin: 2% 2% 30px 2%;
+        font: bolder 30px var(--font-destaque);
+    }
+
+    section{
+        font: normal 14px var(--font-padrao);
+        margin: 10px;
+        padding: 0 13px;
+    }
+
+    #botaoTopo{
+        width: 70px;
+        right: 40px;
+    }
+    
+    #imagemBotaoTopo{
+        width: 70px;
+    }
+    
+    .cheio{
+        font-size: 20px;
+    }
+    
+    section > pre{
+       font-size: 12px;
+       margin-right: 135px;
+    }
+    
+    form{
+        margin: 30px;
+        padding: 10px;
+    }
+    
+    fieldset{
+        margin: 10px;
+    }
+    
+    fieldset > h2{
+        margin: 12px;
+        font: bolder 26px Arial, var(--font-padrao); 
+    }
+    
+    fieldset > label{
+        margin-left: 10px;
+        font-size: 19px;
+    }
+    
+    fieldset > input{
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    section > p{
+        font-size: 14px;
+        text-indent: 30px;
+        line-height: 24px; 
+    }
+    .botao > button{
+        padding: 6px 40px;
+    }
+
+    .voltar{
+        padding: 8px 60px;
+    }
+
+    footer > p{
+        font: normal 15px var(--font-link);
+    }
+    
+    footer > a{
+        font: normal 14px var(--font-link);
+    }
+
+}

@@ -1,0 +1,631 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: Contrail;
+    src: url(../font/ContrailOne-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --azul: #4169E1;
+    --roxo: #5d5888;
+    --roxoescuro:#261c3f;
+    --verde:#3ca37b;
+    --cinza: #3B3B3B;
+    --cinzaclaro: #ced1ce;
+    --branco: #f0f7ee;    
+    --opacidade: #00000025;
+    --opacidade-dois: #00000057;
+    
+    --font-titulo: 'Contrail', Comic Sans MS, cursive;
+    --font-destaque: Comic Sans MS, Verdana, Arial;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-link: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --sombra: 1px 1px 20px var(--opacidade);
+}
+
+::-webkit-scrollbar{ 
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--roxo);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--opacidade);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--opacidade-dois);
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body{
+    background: linear-gradient(to right, var(--azul), var(--roxo));
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1{
+    font: bold 3.5em var(--font-titulo);    
+    color: var(--branco);
+    text-shadow: -4px 4px 0px var(--opacidade);
+    white-space: nowrap;
+}
+
+#botaoNav{
+    width: 65px;
+    display: none;
+    border: none;
+    border-radius: 40px;
+    background: transparent;
+}
+
+#imagemBotao{
+    width: 65px;
+}
+
+.ativo{
+    display: flex;
+}
+
+nav > a{
+    font: bold 20px var(--font-link);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--branco);
+	background: transparent;
+	border: 1px solid transparent;
+	padding: 12px 30px;
+	border-radius: 40px;
+	transition: all .55s ease;
+}
+
+nav > a:hover{
+	transform: translateY(10px);
+}
+
+nav > a.inicio{
+	color: #5B598D;
+	background: var(--branco);
+}
+
+nav > a:hover.inicio{
+    color: var(--branco);
+	background: transparent;
+	border: 1px solid var(--branco);
+    transform: none;
+}
+
+main{
+    min-height: calc(100vh - 244px);
+    color: var(--branco);
+    font-family: var(--font-padrao);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+article > h2{
+    margin: 2%;
+    font: bolder 40px var(--font-destaque);
+}
+
+article > h2 > .barrinha{
+    margin: 10px;
+    animation: piscando 1s infinite linear;
+}
+
+@keyframes piscando{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+article > .alinhando  >.seta{
+    width: 7%;
+}
+
+.exemplos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.exemplos > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.exemplos > a > p{
+    font: bold 25px var(--font-link);
+    position: absolute;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1000;
+    background-color: var(--verde);
+    box-shadow: 1px 1px 60px rgba(245, 245, 245, 0.568);
+    visibility: hidden;
+    transition: 250ms;
+}
+
+.ex{
+    border-radius: 20px;
+    border: 5px solid var(--branco);
+    width: 500px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: var(--sombra);
+    transition: 1s;
+}
+
+.alinhando{
+    align-items: center;
+}
+
+ul.integrantes{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+.acionado{
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+li{
+    cursor: pointer;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+li > a > img{
+    border-radius: 40px;
+	border: 8px solid gray;
+    box-shadow: var(--sombra);
+    width: 180px;
+}
+
+.nomes{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-destaque);
+    text-shadow: var(--sombra);
+}
+
+button{
+    box-shadow: var(--sombra)
+}
+
+section{
+    align-items: center;
+}
+
+section{
+    margin: 20px;
+    color: var(--roxoescuro);
+    font: normal 18px var(--font-padrao);
+    padding: 0 30px;
+	border-radius: 40px;
+}
+
+section.fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+section > h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+	color: var(--cinza);
+}
+
+.cheio{
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: bolder;
+    color: var(--cinza);
+}
+
+#botaoTopo{
+    display: none;
+    position: fixed;
+    border: none;
+    width: 80px;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1000;
+    border-radius: 40px;
+    background-color: var(--roxo);
+}
+
+#botaoTopo:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+#imagemBotaoTopo{
+    width: 80px;
+}
+
+.entrada-img{
+    width: 700px;
+    margin: 10px;
+}
+
+.entrando-img{
+    animation: entrando-img 1s normal linear;
+}
+
+@keyframes entrando-img{
+    from{
+        opacity: 0%;
+        transform: translateX(-100%);
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+.entrando-txt{
+    animation: entrando-txt 1s normal;
+}
+
+@keyframes entrando-txt{
+    from{
+        transform: translateY(80%);
+        opacity: 30%;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+section > h3{
+    text-align: center;
+}
+
+section > p{
+    text-align: justify;
+    padding: 10px;
+    text-indent: 40px;
+    line-height: 30px; 
+    color: black;
+}
+
+.video{
+    position: relative;    
+	padding: 15% 30%;
+}
+
+.video iframe{
+    border-radius: 20px;
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+}
+
+.reduzido{
+    padding-right: 55px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+section > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+section > h3{
+    margin-bottom: 30px;
+}
+
+section > aside{
+    box-shadow: var(--sombra);
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+aside > h3{
+    font-size: 35px;
+    color: white;
+    background-color: var(--cinza);
+    margin: -10px -20px;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 1px 1px 0px #00000096;
+}
+
+.caracteristicas{
+    margin-top: 30px;
+    padding-left: 10px;
+    align-items: start;
+    flex-wrap: wrap;
+    list-style-type:'\2714\00a0\00a0';
+    list-style-position: inside;
+}
+
+.caracteristicas > li{
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+section > pre{
+    margin: 0 0 30px 0;
+    padding: 20px;
+    white-space: pre-line;
+    background-color: #f3f3f3;
+    border: 1px solid #e6e6e6;
+}
+
+.cor1{
+    color: #ffb030;
+    background: transparent;
+}
+
+.cor2{
+    color: #19177C;
+    background: transparent;
+}
+
+.cor3{
+     color: #508000;
+     background: transparent;
+}
+
+.cor4{
+     color: #BA2160;
+     background: transparent;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--cinza);
+    flex-shrink: 0;
+}
+
+footer > p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    font: normal 18px var(--font-link);
+}
+
+footer > a{
+    font: normal 15px var(--font-link);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 13px;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+.github{
+    width: 40px;
+    margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+
+    #botaoNav{
+        display: block;
+    }   
+
+    nav{
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100vw;
+        padding-top: 70px;
+        height: calc(100vh - 120px);
+        text-align: center;
+        flex-direction: column;
+        z-index: 10000;
+        background: linear-gradient(to right, var(--azul), var(--roxo));
+    }
+
+    nav > a.inicio{
+        color: #515EA9;
+        margin: 100px 40px 0px 40px;
+    }
+
+    article > .alinhando  >.seta{
+        width: 12%;
+    }    
+
+    section{
+        font: normal 15px var(--font-padrao);
+    }
+
+    li > img{
+        width: 200px;
+    }
+
+    .exemplos{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .ex{
+        width: 370px;
+    }
+
+    .entrada-img{
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    ::-webkit-scrollbar{ 
+        width: 0px;
+    }
+
+    header{
+        margin: 20px 30px;
+    }
+
+    #botaoNav{
+        width: 60px;
+    }
+    
+    #imagemBotao{
+        width: 60px;
+    }
+
+    header > h1{
+        font: bold 3.0em var(--font-titulo);    
+    }
+
+    main{
+        min-height: calc(100vh - 230px);
+    }
+
+    article > h2{
+        margin: 2% 2% 30px 2%;
+        font: bolder 30px var(--font-destaque);
+    }
+
+    article > .alinhando  >.seta{
+        width: 20%;
+    }
+
+    section{
+        font: normal 14px var(--font-padrao);
+        margin: 10px;
+        padding: 0 13px;
+    }
+
+    section > h2{
+        font-size: 17px;
+    }
+
+    #botaoTopo{
+        width: 70px;
+        right: 40px;
+    }
+    
+    #imagemBotaoTopo{
+        width: 70px;
+    }
+    
+    .cheio{
+        font-size: 28px;
+    }
+
+    ul.integrantes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    li > img{
+        width: 240px;
+    }
+
+    .reduzido{
+        padding-right: 20px;
+        font-size: 13px;
+    }
+
+    section > p{
+        text-indent: 30px;
+        line-height: 24px; 
+        font-size: 14px;
+    }
+
+    aside > h3{
+        font-size: 26px;
+    }
+
+    .caracteristicas > li{
+        padding-left: 0px;
+    }
+
+    .video{
+        position: relative;    
+        padding: 26.7% 50%;
+    }
+
+    .video iframe{
+        border-radius: 10px;
+    }
+
+    .entrada-img{
+        width: 95%;
+        margin: 10px;
+    }
+
+    footer > p{
+        font: normal 15px var(--font-link);
+    }
+    
+    footer > a{
+        font: normal 14px var(--font-link);
+    }
+
+}

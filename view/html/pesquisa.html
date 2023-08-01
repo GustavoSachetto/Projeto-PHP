@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/logo.png">
+
+        <title>Projeto PHP - Pesquisa</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		
+		<script src="../js/script-dois.js" defer></script>
+		<script src="../js/script-quatro.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Projeto PHP</h1>
+            <button id="botaoNav"><img src="../img/menu.png" id="imagemBotao" alt="Menu hamburguer"></button>
+            <nav id="nav">
+                <a href="pesquisa.html">Pesquisa</a>
+                <a href="variaveis.html">Variaveis</a>
+                <a href="estrutura.html">Estrutura Decisão</a>
+                <a href="integrantes.html">Integrantes</a>
+                <a href="../../index.html" class="inicio">Inicio</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2><span id="text-pesquisa"></span><span class="barrinha">|</span></h2>
+            </article>
+            <section class="fundo">
+                <button id="botaoTopo"><img src="../img/seta-cima.png" id="imagemBotaoTopo" alt="Seta para cima"></button>
+                
+                <!-- O que é PHP ? -->
+                <h2 class="cheio">O que é PHP ?</h2>
+                <p class="entrada-txt">
+                    O PHP é uma linguagem de programação voltada originalmente para desenvolvimento de sites e aplicações web , por ser de código aberto e de fácil aprendizado, é uma das mais populares do mundo.
+                    A linguagem de programação PHP foi criada em 1995 pelo programador canadense Rasmus Lerdorf. A sigla é um acrônimo para PHP: Hypertext Preprocessor. A linguagem tornou-se popular por ter uma sintaxe mais simples, e por mesclar o código executado no lado do servidor com HTML, facilitando a criação de páginas com conteúdo dinâmico.
+                    Assim como o Python e o JavaScript, ele também é classificado como uma linguagem de scripts, ou seja, um conjunto de instruções via código que servem, principalmente, para automatizar tarefas.
+                    Com o PHP, você pode “instruir” uma página estática (criada com HTML e CSS) a executar ações específicas e mais complexas, como validar as informações de um formulário antes dos dados serem enviados de volta ao browser.
+                </p>
+
+                <!-- Como usar PHP em html? -->
+                <h2 class="cheio">Como usar PHP em html?</h2>
+                <p class="entrada-txt">
+                    Existem vários métodos para integrar PHP e HTML, alguns deles são discutidos a seguir.
+                    Você pode adicionar tags PHP à sua página HTML. Você simplesmente precisa incluir o código PHP com a tag de início do PHP
+                    <? Php e a tag de fim do PHP ?>. O código empacotado entre essas duas tags é considerado código PHP e será executado no lado do
+                    servidor antes que o arquivo solicitado seja enviado ao navegador do cliente. Nota: Para usar PHP em HTML, você deve usar a extensão.
+                    php porque em PHP o código é interpretado e executado no lado do servidor.
+                </p>
+
+                <!-- O que é linguagem sever side? -->
+                <h2 class="cheio">O que é linguagem sever side?</h2>
+                
+                <h3>Server-side</h3>
+                <p class="entrada-txt">
+                    As linguagens server-side são linguagens que o SERVIDOR (lado do servidor) entende, ou seja, aplicações que rodam no servidor. Isso quer dizer que você vai escrever um código onde o servidor vai processá-lo e então vai mandar para o seu navegador a resposta.
+                    Por exemplo: se criarmos um script em linguagem back-end (PHP, Asp, Java, Ruby, etc) que apenas calcula a soma de 1 + 1, será o SERVIDOR (ou back) que calculará este resultado.
+                    Se fizermos esse cálculo em alguma linguagem front-end, como o JavaScript, quem calculará essa conta é o BROWSER do usuário. Por isso o termo client (ou front).
+                </p>
+
+                <h3>cliente-side e server-side</h3>
+                <p class="entrada-txt">
+                    Os profissionais que trabalham na interface do usuário são chamados de Desenvolvedores front-end, já aqueles que trabalham no core da
+                    aplicação, fazendo uma programação que somente o servidor irá entender são chamados de Desenvolvedores back-end.
+                </p>
+
+                <!-- Exemplos de linguagens: -->
+                <h2 class="cheio">Exemplos de linguagens:</h2>
+
+                <h3>Essas linguagens são linguagens client-side:</h3>                
+                <picture>
+                    <source media="(max-width: 800px)" srcset="../img/frontEnd-pq.png">
+                    <img src="../img/frontEnd.png" class="entrada-img" alt="Linguagens Front-end">
+                </picture>
+
+                <h3>Essas são linguagens server-side:</h3>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="../img/backEnd-pq.png">
+                    <img src="../img/backEnd.png" class="entrada-img" alt="Linguagens Front-end">
+                </picture>
+
+                <!-- O PHP ainda é útil ? -->
+                <h2 class="cheio">O PHP ainda é útil ?</h2>
+                
+                
+                <p class="entrada-txt">
+                    PHP é a linguagem de programação do lado do servidor mais utilizada na web. De fato , 79,2% de todos os sites dependem 
+                    dessa linguagem até certo ponto, tornando uma das linguagem mais populares entre programadores e desenvolvedores web devido 
+                    ao seu amplo uso. Então podemos concluir que a linguagem PHP não “morreu” e continua sendo muito utilizada para a criação de sites.
+                </p>
+                
+                <section class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xaaTLxyJrLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+                
+                <h2 class="cheio">Principais características do PHP:</h2>
+                <p class="entrada-txt">
+                    A linguagem PHP é uma linguagem de programação de domínio específico, ou seja, seu escopo se estende a um campo de atuação que é o desenvolvimento
+                    web, embora tenha variantes como o PHP-GTK. Seu propósito principal é de implementar soluções web velozes, simples e eficientes.
+                </p>
+                
+                <aside>
+                    <h3>Características:</h3>
+                    <ul class="caracteristicas">
+                        <li class="entrada-txt">Velocidade e robustez.</li>
+                        <li class="entrada-txt">Orientação a objetos.</li>
+                        <li class="entrada-txt">Portabilidade - independência de plataforma - escreva uma vez, rode em qualquer lugar.</li>
+                        <li class="entrada-txt">Tipagem dinâmica.</li>
+                        <li class="entrada-txt">Sintaxe similar a C/C++ e o Perl.</li>
+                        <li class="entrada-txt">Open-source.</li>
+                        <li class="entrada-txt">Server-side (O cliente manda o pedido e o servidor responde em página HTML).</li>
+                    </ul>
+                </aside>
+
+                <h2 class="cheio">Exemplo de um código em php:</h2>
+                <pre>
+                    <mark class="cor1">&lt;?php</mark>
+                    // Conexão com o banco de dados
+                    <mark class="cor2">$host</mark> = <mark class="cor4">"localhost"</mark>;
+                    <mark class="cor2">$db</mark>   = <mark class="cor4">"nome-database"</mark>;
+                    <mark class="cor2">$user</mark> = <mark class="cor4">"root"</mark>;
+                    <mark class="cor2">$pass</mark> = <mark class="cor4">""</mark>;
+                    <mark class="cor2">$con</mark> = <mark class="cor3">mysql_connect</mark>(<mark class="cor2">$host,$user,$pass</mark>);
+                    <mark class="cor3">if</mark>(<mark class="cor3">mysql_select_db</mark>(<mark class="cor2">$db, $con</mark>)){
+                    <mark class="cor3">echo</mark> <mark class="cor4">"conexao bem sucedida"</mark>; //Teste para garantir que há conexão
+                    }
+                    <mark class="cor3">else</mark>{
+                    <mark class="cor3">echo</mark><mark class="cor4">"conexao falhou"</mark>;
+                    }
+                    <mark class="cor1">?></mark>
+                </pre>          
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Gustavo Sachetto, Myrela e Kauany.</p>
+            <a href="https://github.com/GustavoSachetto/Projeto-PHP" target="_blank" class="repositorio">Repositorio do projeto<img src="../img/repositorio.png" class="github" alt="GitHub"></a>
+        </footer>      
+    </body>
+</html>

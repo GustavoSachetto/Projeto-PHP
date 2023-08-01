@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../../img/logo.png">
+
+        <title>Projeto PHP - Atividade 6</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../css/style-atividades.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        
+        <script src="../../js/script-tres.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Projeto PHP</h1>
+            <button id="botaoNav"><img src="../../img/menu.png" id="imagemBotao" alt="Menu hamburguer"></button>
+            <nav id="nav">
+                <a href="../pesquisa.html">Pesquisa</a>
+                <a href="../variaveis.html">Variaveis</a>
+                <a href="../estrutura.html">Estrutura Decisão</a>
+                <a href="../integrantes.html">Integrantes</a>
+                <a href="../../../index.html" class="inicio">Inicio</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>Perimetro e área:</h2>
+            </article>
+            <section>
+                <button id="botaoTopo"><img src="../../img/seta-cima.png" id="imagemBotaoTopo" alt="Seta para cima"></button>
+                <h2 class="cheio entrada-txt">
+                    Calculo do perimetro e da área.
+                </h2>
+                <form id="formulario" name="formulario" method="post" action="../../../controller/retangulo.php">
+                    <fieldset>
+                        <h2>Digite Aqui:</h2>                       
+                        <label for="txtAlt">Altura:</label>
+                        <input type="float" name="txtAlt" id="txtAlt" placeholder="Digite a Altura do retangulo" required/>
+
+                        <label for="txtLarg">Largura:</label>
+                        <input type="float" name="txtLarg" id="txtLarg" placeholder="Digite a Largura do retangulo" required/>
+                    </fieldset>
+                    <div class="botao">
+                        <button type="reset" id="limpar">Limpar</button>
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+                <a class="voltar" href="../variaveis.html">Voltar</a>
+            </section>    
+        </main>
+        <footer>
+            <p>Desenvolvido por Gustavo Sachetto, Myrela e Kauany.</p>
+            <a href="https://github.com/GustavoSachetto/Projeto-PHP" target="_blank" class="repositorio">Repositorio do projeto<img src="../../img/repositorio.png" class="github" alt="GitHub"></a>
+        </footer>
+    </body>
+</html>

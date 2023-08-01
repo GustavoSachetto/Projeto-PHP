@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root{
+    --azul: #4169E1;
+    --roxo: #5d5888;
+    --roxoescuro:#261c3f;
+    --verde:#3ca37b;
+    --cinza: #3B3B3B;
+    --cinzaclaro: #ced1ce;
+    --branco: #f0f7ee;    
+    --opacidade: #00000025;
+    --opacidade-dois: #00000057;
+    
+    --font-titulo: 'Contrail', Comic Sans MS, cursive;
+    --font-destaque: Comic Sans MS, Verdana, Arial;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-link: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --sombra: 1px 1px 20px var(--opacidade);
+}
+
+::-webkit-scrollbar{ 
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--roxo);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--opacidade);
+    border-radius: 10px;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body{
+    background: linear-gradient(to right, var(--azul), var(--roxo));
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: var(--roxoescuro);
+    font: normal 30px var(--font-padrao);
+    padding: 100px;
+	border-radius: 40px;
+    background-color: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+h2{
+    margin: 10px;
+}
+
+p > img{
+    border-radius: 30px;
+    box-shadow: var(--sombra);
+    margin: 20px;
+}
+
+a{
+    margin: 20px;
+    font: bolder 26px var(--font-link);
+    padding: 15px 100px;
+    border-radius: 30px; 
+    text-decoration: none;
+    color: white;
+    background-color: var(--verde);
+    border: 2px solid transparent;
+    transition: 500ms;
+}
+
+a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+@media (max-width: 1000px) {
+
+    ::-webkit-scrollbar{ 
+        width: 0px;
+    }
+
+    section{
+        margin: 0px;
+    }
+}
