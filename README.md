@@ -2,7 +2,7 @@
 
 
 # Projeto-PHP
-Esse projeto está sendo utilizado nas aulas de Sistemas web, onde apresento algumas atividades utilizando como principal a linguagem de programação PHP. **Meu papel nesse projeto foi desenvolver basicamente toda a parte Front-end do site.** Projeto realizado em trio e atualmente está em andamento.
+Esse projeto está sendo utilizado nas aulas de Sistemas web, onde apresento algumas atividades utilizando como principal a linguagem de programação PHP. **Meu papel nesse projeto foi desenvolver basicamente a parte Front-end do site.** Projeto realizado em trio e atualmente está em andamento.
 
 ## O projeto contém: 
 * __HTML:__ Semântica, links internos e externos, vídeo, imagem dinâmica, autoridade de títulos e lista.
