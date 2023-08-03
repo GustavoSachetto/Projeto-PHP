@@ -1,3 +1,5 @@
+![logo](https://github.com/GustavoSachetto/Projeto-PHP/assets/136517074/ea09bf6e-dc2a-4f56-a6ae-0ef13969ed0e)
+
 # Projeto-PHP
 Esse projeto está sendo utilizado nas aulas de Sistemas web, onde apresento algumas atividades utilizando como principal a linguagem de programação PHP. **Meu papel nesse projeto foi desenvolver basicamente toda a parte Front-end do site.** Projeto realizado em trio e atualmente está em andamento.
 
