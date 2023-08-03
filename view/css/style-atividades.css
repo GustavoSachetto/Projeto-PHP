@@ -184,7 +184,6 @@ section > p{
     font: normal 20px sans-serif;
     text-shadow: var(--sombra);
     text-align: center;
-    padding-left: 0;
 }
 
 section > pre{
@@ -462,7 +461,6 @@ footer > a:hover{
 
     section > p{
         font-size: 14px;
-        text-indent: 30px;
         line-height: 24px; 
     }
     .botao > button{
