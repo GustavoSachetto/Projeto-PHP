@@ -184,12 +184,13 @@ section > p{
     font: normal 20px sans-serif;
     text-shadow: var(--sombra);
     text-align: center;
+    padding-left: 0;
 }
 
 section > pre{
    text-align: center;
    font-size: 18px;
-   margin-right: 190px;
+   margin-right: 205px;
 }
 
 .entrando-txt{
