@@ -100,3 +100,12 @@ section > a:hover{
         margin: 0px;
     }
 }
+
+@media (max-width: 600px){
+    
+    section{
+        margin: 10px;
+        padding: 100px 120px;
+        border-radius: 30px;
+    }
+}
