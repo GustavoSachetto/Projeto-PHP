@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="../view/css/style-resultado.css">
         <link rel="shortcut icon" href="../view/img/logo.png">
+        <title>Projeto PHP - Resultado</title>
     </head>
     <body>
         <main>
