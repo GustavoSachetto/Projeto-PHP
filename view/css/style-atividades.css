@@ -49,6 +49,13 @@
     vertical-align: baseline;
 }
 
+body{
+    background: linear-gradient(to right, var(--azul), var(--roxo));
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 header{
     margin: 20px 50px;
     display: flex;
@@ -101,13 +108,6 @@ nav > a:hover.inicio{
 
 #imagemBotao{
     width: 80px;
-}
-
-body{
-    background: linear-gradient(to right, var(--azul), var(--roxo));
-    width: 100vw;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 main{
