@@ -97,15 +97,19 @@ section > a:hover{
     }
 
     section{
-        margin: 0px;
-    }
-}
-
-@media (max-width: 600px){
-    
-    section{
         margin: 10px;
-        padding: 100px 120px;
-        border-radius: 30px;
+    }
+
+    section > h2{
+        margin: 2% 2% 30px 2%;
+        font: bolder 30px var(--font-destaque);
+    }
+
+    section > p{
+        margin: 2% 2% 30px 2%;
+    }
+
+    section > a{
+        font-size: 35px;
     }
 }

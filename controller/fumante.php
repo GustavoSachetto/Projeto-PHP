@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../view/css/style-resultado.css">
+        <link rel="shortcut icon" href="../view/img/logo.png">
     </head>
     <body>
         <main>
