@@ -17,7 +17,7 @@
                     $N2 = $_POST['txtAF'];
                     $N3 = $N1 * 10;
                     $N4 = $N2 * 365 ;
-                    $N5 = ($N3 * $N4) /1440;
+                    $N5 = round(($N3 * $N4) /1440);
 
                     echo "<h2>O total de dias perdidos é $N5</h2>";
 
