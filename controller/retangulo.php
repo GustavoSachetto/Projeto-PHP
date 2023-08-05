@@ -15,7 +15,7 @@
 
                     $altura = $_POST['txtAlt'];
                     $largura = $_POST['txtLarg'];
-                    $area = $altura * $largura ;
+                    $area = number_format(($altura * $largura),2) ;
                     $perimetro = number_format((($altura + $largura) * 2),2);
 
                     echo "<h2>Área: $area</h2>";
