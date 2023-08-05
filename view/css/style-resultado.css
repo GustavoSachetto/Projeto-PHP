@@ -55,18 +55,22 @@ section{
     align-items: center;
     margin: 20px;
     color: var(--roxoescuro);
-    font: normal 30px var(--font-padrao);
-    padding: 100px;
+    font: normal 20px var(--font-padrao);
+    padding: 0 30px;
 	border-radius: 40px;
     background-color: var(--branco);
     box-shadow: var(--sombra);
 }
 
-h2{
-    margin: 10px;
+section > h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+	color: var(--cinza);
 }
 
-p > img{
+section > p > img{
     border-radius: 30px;
     box-shadow: var(--sombra);
     margin: 20px;
@@ -98,18 +102,20 @@ section > a:hover{
 
     section{
         margin: 10px;
+        padding: 0 13px;
     }
 
     section > h2{
         margin: 2% 2% 30px 2%;
-        font: bolder 30px var(--font-destaque);
+        font: bolder 24px var(--font-destaque);
     }
 
     section > p{
-        margin: 2% 2% 30px 2%;
+        font-size: 14px;
+        line-height: 24px; 
     }
 
     section > a{
-        font-size: 35px;
+        padding: 8px 60px;
     }
 }
