@@ -49,6 +49,14 @@ body{
     justify-content: center;
 }
 
+article > h2{
+    margin: 2%;
+    font: bolder 40px var(--font-destaque);
+    text-shadow: var(--sombra);
+    text-align: center;
+    color: var(--branco);
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -56,18 +64,23 @@ section{
     margin: 20px;
     color: var(--roxoescuro);
     font: normal 20px var(--font-padrao);
-    padding: 0 30px;
+    padding: 0 100px;
 	border-radius: 40px;
     background-color: var(--branco);
     box-shadow: var(--sombra);
 }
 
 section > h2{
+    margin-top: 30px;
     padding: 10px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
 	color: var(--cinza);
+}
+
+section > p{
+    margin: 4px;
 }
 
 section > p > img{
@@ -94,22 +107,33 @@ section > a:hover{
     border: 2px solid black;
 }
 
-@media (max-width: 1000px) {
-
+@media (max-width: 600px){
+    
     ::-webkit-scrollbar{ 
         width: 0px;
     }
 
     section{
-        margin: 0px;
-    }
-}
-
-@media (max-width: 600px){
-    
-    section{
+        font: normal 14px var(--font-padrao);
         margin: 10px;
-        padding: 100px 120px;
-        border-radius: 30px;
+        padding: 0 30px;
+    }
+
+    section > h2{
+        font: bolder 23px var(--font-padrao);
+    }
+
+    section > a{
+        font-size: 23px;
+        padding: 8px 60px;
+    }
+
+    article > h2{
+        margin: 2% 2% 30px 2%;
+        font: bolder 30px var(--font-destaque);
+    }
+
+    section > p > img{
+        width: 200px;
     }
 }
