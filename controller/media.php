@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 
                     $nota01 = $_POST['txtNota01'];
                     $nota02 = $_POST['txtNota02'];
-                    $Media = ($nota01 + $nota02) / 2;
+                    $Media = number_format((($nota01 + $nota02) / 2),2);
 
                     echo "<h2>Notas digitadas: $nota01 , $nota02</h2>";
                     echo "<p>Média calculada: $Media</p>";

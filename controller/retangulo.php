@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
                     $altura = $_POST['txtAlt'];
                     $largura = $_POST['txtLarg'];
                     $area = $altura * $largura ;
-                    $perimetro = ($altura + $largura) * 2;
+                    $perimetro = number_format((($altura + $largura) * 2),2);
 
                     echo "<h2>Área: $area</h2>";
                     echo "<h2>Perimetro: $perimetro</h2>";

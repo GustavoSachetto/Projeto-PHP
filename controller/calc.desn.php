@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
                     $Peso = $_POST['txtPeso'];
                     $Altura = $_POST['txtAlt'];
 
-                    $imc = number_format($Peso / ($Altura * $Altura),2);
+                    $imc = number_format(($Peso / ($Altura * $Altura)),2);
 
                     echo "<h2>O IMC de $Nome é $imc</h2>";
 

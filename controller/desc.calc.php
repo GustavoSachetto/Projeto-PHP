@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
                     $valorVenda = $_POST['textVal'];
                     $quantidade =$_POST['textQuant']; 
                     $valorTotal = $valorVenda * $quantidade;
-                    $desc = ($valorTotal * 10  ) /100 ;
+                    $desc = number_format((($valorTotal * 10  ) /100),2) ;
                     $valorTotalDesc = $valorTotal - $desc;
 
                     echo "<h2>Nome do produto: $nome</h2>";

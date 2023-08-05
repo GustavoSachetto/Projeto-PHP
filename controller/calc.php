@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,10 @@
 
                     $valor01 = $_POST['txtValor01'];
                     $valor02 = $_POST['txtValor02'];
-                    $Sub = $valor01 - $valor02;
-                    $Ad =  $valor01 + $valor02;
-                    $Multi =  $valor01 * $valor02;
-                    $Div =  $valor01 / $valor02;
+                    $Sub = number_format(($valor01 - $valor02),2);
+                    $Ad =  number_format(($valor01 + $valor02),2);
+                    $Multi =  number_format(($valor01 * $valor02),2);
+                    $Div =  number_format(($valor01 / $valor02),2);
 
                     echo "<h2>Valores inseridos: $valor01 , $valor02 </h2>";
                     echo "<p>Subtração dos valores inseridos : $Sub </p>";
