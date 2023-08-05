@@ -18,8 +18,8 @@
                     $area = number_format(($altura * $largura),2) ;
                     $perimetro = number_format((($altura + $largura) * 2),2);
 
-                    echo "<h2>Área: $area</h2>";
-                    echo "<h2>Perimetro: $perimetro</h2>";
+                    echo "<h2>Área: $area metros</h2>";
+                    echo "<h2>Perimetro: $perimetro metros</h2>";
 
                 ?>
                 <a href="../view/html/atividade/retangulo.html">Voltar</a>
