@@ -17,7 +17,7 @@
                     $Peso = $_POST['txtPeso'];
                     $Altura = $_POST['txtAlt'];
 
-                    $imc = $Peso / ($Altura * $Altura);
+                    $imc = number_format($Peso / ($Altura * $Altura),2);
 
                     echo "<h2>O IMC de $Nome é $imc</h2>";
 
