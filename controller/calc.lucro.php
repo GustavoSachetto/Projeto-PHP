@@ -10,6 +10,9 @@
     </head>
     <body>
         <main>
+            <article>
+                <h2>Resultado:</h2>
+            </article>
             <section>
                 <?php 
 
