@@ -35,14 +35,14 @@
                     Crie um algoritmo que deve ler duas variaveis. 
                 </h2>
                 <p class="entrada-txt">E mostrar na tela os valores somados, subtraidos, multiplicados e divididos.</p>
-                <form id="formulario" name="formulario" method="post" action="../../../controller/calc.php">
+                <form action="../../../controller/calc.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                       
                         <label for="txtValor01">Numero 1:</label>
-                        <input type="float" name="txtValor01" placeholder="Digite o primeiro numero" required/>
+                        <input type="number" name="txtValor01" id="txtValor01" step="0.01" placeholder="Digite o primeiro numero" required/>
 
                         <label for="txtValor02">Numero 2:</label>
-                        <input type="float" name="txtValor02" placeholder="Digite o segundo numero" required/>
+                        <input type="number" name="txtValor02" id="txtValor02" step="0.01" placeholder="Digite o segundo numero" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

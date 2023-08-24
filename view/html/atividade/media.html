@@ -35,14 +35,14 @@
                     Crie um algoritmo que leia dois valores e exiba a media entre eles.
                 </h2>
                 <p class="entrada-txt">E depois exiba o resuldado na tela.</p>
-                <form id="formulario" name="formulario" method="post" action="../../../controller/media.php">
+                <form action="../../../controller/media.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                       
                         <label for="txtNota01">Primeira nota:</label>
-                        <input type="float" name="txtNota01" id="txtNota01" placeholder="Digite a primeira nota" required/>
+                        <input type="number" name="txtNota1" id="txtNota1" step="0.1" placeholder="Digite a primeira nota" required/>
                         
                         <label for="txtNota02">Segunda nota:</label>
-                        <input type="float" name="txtNota02" id="txtNota02" placeholder="Digite a segunda nota" required/>
+                        <input type="number" name="txtNota2" id="txtNota2" step="0.1" placeholder="Digite a segunda nota" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

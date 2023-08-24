@@ -16,12 +16,12 @@
             <section>
                 <?php  
 
-                    $nota01 = $_POST['txtNota01'];
-                    $nota02 = $_POST['txtNota02'];
-                    $Media = number_format((($nota01 + $nota02) / 2),2);
+                    $nota1 = $_POST['txtNota1'];
+                    $nota2 = $_POST['txtNota2'];
+                    $media = number_format((($nota1 + $nota2) / 2),2);
 
-                    echo "<h2>Notas digitadas: $nota01 , $nota02</h2>";
-                    echo "<p>Média calculada: $Media</p>";
+                    echo "<h2>Notas digitadas: $nota1 e $nota2</h2>";
+                    echo "<p>Média calculada: $media</p>";
 
                 ?>
                 <a href="../view/html/atividade/media.html">Voltar</a>

@@ -16,15 +16,15 @@
             <section>
                 <?php
 
-                    $a = $_POST['txtA'];
-                    $b = $_POST['txtB'];
-                    $c = $_POST['txtC'];
-                    $lados = $a + $b + $c;
+                    $ladoA = $_POST['txtA'];
+                    $ladoB = $_POST['txtB'];
+                    $ladoC = $_POST['txtC'];
+                    $lados = $ladoA + $ladoB + $ladoC;
 
-                    if (($a < $lados) && ($b < $lados) && ($c < $lados)) {
-                        if ($a == $b && $b == $c) {
+                    if (($ladoA < $lados) && ($ladoB < $lados) && ($ladoC < $lados)) {
+                        if ($ladoA == $ladoB && $ladoB == $ladoC) {
                             echo '<h2>Tipo de triângulo: Equilatero </h2> <p><img src="../view/img/atividades/equilatero.png"></p>';
-                        } else if ($a == $c || $a == $b|| $b == $c ) {
+                        } else if ($ladoA == $ladoC || $ladoA == $ladoB|| $ladoB == $ladoC ) {
                             echo '<h2>Tipo de triângulo: Isosceles </h2> <p><img src="../view/img/atividades/isosceles.png"></p>';
                         } else {
                             echo '<h2>Tipo de triângulo: Escaleno </h2> <p><img src="../view/img/atividades/escaleno.png"></p>';

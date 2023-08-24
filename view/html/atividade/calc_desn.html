@@ -42,17 +42,17 @@
                     IMC >30,0kg/m2 até 34,9kg/m2 - obesidade grau 1.
                 </pre>
                 <p class="entrada-txt">E depois mostre na tela o nome e imc do paciente.</p>
-                <form name="formulario" method="post" action="../../../controller/calc.desn.php">
+                <form action="../../../controller/calc.desn.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                        
                         <label for="txtNome">Nome: </label>
                         <input type="text" name="txtNome" placeholder="Digite seu nome" required/>                
 
                         <label for="txtPeso">Peso: </label>
-                        <input type="float" name="txtPeso" placeholder="Digite seu peso em kg" required/>              
+                        <input type="number" name="txtPeso" id="txtPeso" step="0.01" placeholder="Digite seu peso em kg" required/>              
 
                         <label for="txtAlt">Altura:</label>
-                        <input type="float" name="txtAlt" placeholder="Digite sua altura em metros" required/>
+                        <input type="number" name="txtAlt" id="txtAlt" step="0.01" placeholder="Digite sua altura em metros" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

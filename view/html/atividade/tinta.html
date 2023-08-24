@@ -43,14 +43,14 @@
                     lata de tinta.
                 </pre>
                 <p class="entrada-txt">E depois na exiba a quantidade de latas de tintas necessarias para pintar a parede.</p>
-                <form name="formulario" method="post" action="../../../controller/tinta.php">
+                <form action="../../../controller/tinta.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                        
                         <label for="txtNome">Altura:</label>
-                        <input type="float" name="txtA" placeholder="Digite a altura da parede em metros" required/>                
+                        <input type="number" name="txtAltura" id="txtAltura" step="0.1" placeholder="Digite a altura da parede em metros" required/>                
 
                         <label for="txtPeso">Largura:</label> </label>
-                        <input type="float" name="txtL" placeholder="Digite a largura da parede em metros" required/>              
+                        <input type="number" name="txtLargura" id="txtLargura" step="0.1" placeholder="Digite a largura da parede em metros" required/>              
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

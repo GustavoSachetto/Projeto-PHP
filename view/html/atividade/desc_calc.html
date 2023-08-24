@@ -44,17 +44,17 @@
                     valor total com 10% DE DESCONTO.
                 </pre>
                 <p class="entrada-txt">E depois mostre na tela o nome, valor com total com desconto e valor total sem desconto.</p>
-                <form id="formulario" name="formulario" method="post" action="../../../controller/desc.calc.php">
+                <form action="../../../controller/desc.calc.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                       
                         <label for="txtName">Nome:  </label>
-                        <input type="text" name="txtName" placeholder="Digite o nome do produto" required/>
+                        <input type="text" name="txtName" id="txtName" placeholder="Digite o nome do produto" required/>
 
                         <label for="textVal">Valor de venda: </label>
-                        <input type="float" name="textVal" placeholder="Digite o valor de venda" required/>
+                        <input type="number" name="textVal" id="textVal" step="0.01" placeholder="Digite o valor de venda" required/>
 
                         <label for="textQuant">Quantidade comprada:</label>
-                        <input type="float" name="textQuant" placeholder="Digite a quantidade comprada" required/>
+                        <input type="number" name="textQuant" id="textQuant" placeholder="Digite a quantidade comprada" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

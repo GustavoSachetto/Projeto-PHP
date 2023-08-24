@@ -16,12 +16,12 @@
             <section>
                 <?php 
 
-                    $PrecoCusto = $_POST['txtValor01'];
-                    $PrecoVenda = ($PrecoCusto /100) *150;
-                    $Lucro = ($PrecoCusto - 1.00) - 0.50;
+                    $precoCusto = $_POST['txtValor1'];
+                    $precoVenda = ($precoCusto /100) *150;
+                    $lucro = ($precoCusto - 1.00) - 0.50;
 
-                    echo "<h2>Pretende vender o brigadeiro por : $PrecoVenda R$</h2>";
-                    echo "<p> Tendo um lucro de: $Lucro R$</p>";
+                    echo "<h2>Pretende vender o brigadeiro por : $precoVenda</h2>";
+                    echo "<p>Tendo um lucro de: $lucro</p>";
 
                 ?>
                 <a href="../view/html/atividade/calc_lucro.html">Voltar</a>

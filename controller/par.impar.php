@@ -16,9 +16,9 @@
             <section>
                 <?php  
 
-                    $n = $_POST['txtNumber'];
+                    $numero = $_POST['txtNumber'];
 
-                    if ($n % 2 == 0) {
+                    if ($numero % 2 == 0) {
                         echo "<h2>O numero digitado é Par</h2>";
                     } else {
                         echo "<h2>O numero digitado é Impar</h2>";

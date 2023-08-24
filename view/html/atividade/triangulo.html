@@ -41,17 +41,17 @@
                     isósceles, equilátero ou escaleno.
                 </pre>
                 <p class="entrada-txt">E depois na tela os valores inseridos e o modelo do triangulo com comparação a imagem.</p>
-                <form name="formulario" method="post" action="../../../controller/triangulo.php">
+                <form action="../../../controller/triangulo.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                        
                         <label for="txtNome">Lado 1: </label>
-                        <input type="text" name="txtA" placeholder="Digite o primeiro lado" required/>                
+                        <input type="number" name="txtA" placeholder="Digite o primeiro lado" required/>                
 
                         <label for="txtPeso">Lado 2: </label>
-                        <input type="float" name="txtB" placeholder="Digite o segundo lado" required/>              
+                        <input type="number" name="txtB" placeholder="Digite o segundo lado" required/>              
 
                         <label for="txtAlt">Lado 3:</label>
-                        <input type="float" name="txtC" placeholder="Digite o terceiro lado" required/>
+                        <input type="number" name="txtC" placeholder="Digite o terceiro lado" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

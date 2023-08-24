@@ -41,14 +41,14 @@
                     vida que o fumante já perdeu.
                 </pre>
                 <p class="entrada-txt">E depois mostre na tela o Tempo de vida perdido em dias</p>
-                <form id="formulario" name="formulario" method="post" action="../../../controller/fumante.php">
+                <form action="../../../controller/fumante.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                       
                         <label for="txt01">Cigarros:</label>
-                        <input type="number" name="txtCQ" placeholder="Digite a quantidade fumado por dia" required/>
+                        <input type="number" name="txtCQ" id="txtCQ" placeholder="Digite a quantidade fumado por dia" required/>
                 
                         <label for="txt02">Anos:</label>
-                        <input type="number" name="txtAF" placeholder="Digite a quantos anos fumando" required/>
+                        <input type="number" name="txtAF" id="txtAF" placeholder="Digite a quantos anos fumando" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

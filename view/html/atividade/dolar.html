@@ -35,11 +35,11 @@
                     Crie um algoritmo que converta dolar para real.
                 </h2>
                 <p class="entrada-txt">E depois exiba o resuldado na tela.</p>
-                <form id="formulario" name="formulario" method="post" action="../../../controller/dolar.php">
+                <form action="../../../controller/dolar.php" method="post">
                     <fieldset>
                         <h2>Digite Aqui:</h2>                       
                         <label for="txtreal">Real:</label>
-                        <input type="float" name="txtreal" id="txtreal" placeholder="Insira o valor em reais" required/>
+                        <input type="number" name="txtreal" id="txtreal" step="0.001" placeholder="Insira o valor em reais" required/>
                     </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>

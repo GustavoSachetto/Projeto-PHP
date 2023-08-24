@@ -20,11 +20,11 @@
                     $valorVenda = $_POST['textVal'];
                     $quantidade =$_POST['textQuant']; 
                     $valorTotal = $valorVenda * $quantidade;
-                    $desc = number_format((($valorTotal * 10  ) /100),2) ;
-                    $valorTotalDesc = $valorTotal - $desc;
+                    $desconto = number_format((($valorTotal * 10  ) /100),2) ;
+                    $valorTotalDesc = $valorTotal - $desconto;
 
                     echo "<h2>Nome do produto: $nome</h2>";
-                    echo "<p>Valor unitario : $valorVenda</p>";
+                    echo "<p>Valor unitário: $valorVenda</p>";
                     echo "<p>Valor total sem desconto: $valorTotal</p>";
                     echo "<p>Valor total com 10% de desconto: $valorTotalDesc</p>";
 
