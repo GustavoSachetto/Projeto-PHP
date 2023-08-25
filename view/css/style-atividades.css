@@ -140,6 +140,33 @@ section{
     box-shadow: var(--sombra);
 }
 
+.cheio{
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: bolder;
+    color: var(--cinza);
+}
+
+.cor1{
+    color: #ffb030;
+    background: transparent;
+}
+
+.cor2{
+    color: #19177C;
+    background: transparent;
+}
+
+.cor3{
+     color: #508000;
+     background: transparent;
+}
+
+.cor4{
+     color: #BA2160;
+     background: transparent;
+}
+
 #botaoTopo{
     display: none;
     position: fixed;
