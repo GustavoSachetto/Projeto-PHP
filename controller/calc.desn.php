@@ -26,17 +26,13 @@
 
                     if ($imc < 18.5) {
                         echo "<p>O paciente está abaixo do peso</p>";
-                    }
-                    else if (($imc >= 18.5) && ($imc <= 24.9)) {
+                    } else if (($imc >= 18.5) && ($imc <= 24.9)) {
                         echo "<p>O paciente está com o peso adequado</p>";
-                    }
-                    else if (($imc >= 25) && ($imc <= 29.9)) {
+                    } else if (($imc >= 25) && ($imc <= 29.9)) {
                         echo "<p>O paciente apresenta sobrepeso</p>";
-                    }
-                    else if (($imc >= 30) && ($imc <= 34.9)) {
+                    } else if (($imc >= 30) && ($imc <= 34.9)) {
                         echo "<p>O paciente apresenta obesidade grau 1</p>";
-                    }
-                    else {
+                    } else {
                         echo "<p>O paciente necessita de ajuda!</p>";
                     }
 

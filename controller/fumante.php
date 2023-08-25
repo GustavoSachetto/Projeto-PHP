@@ -22,7 +22,7 @@
                     $N4 = $N2 * 365 ;
                     $N5 = round(($N3 * $N4) /1440);
 
-                    echo "<h2>O total de dias perdidos é $N5</h2>";
+                    echo "<h2>O total de vida perdido é: $N5 dias</h2>";
 
                 ?>
                 <a href="../view/html/atividade/fumante.html">Voltar</a>

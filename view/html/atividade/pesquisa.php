@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../../img/logo.png">
 
-        <title>Projeto PHP - Atividade 4</title>
+        <title>Projeto PHP - Atividade 9</title>
         
         <link rel="stylesheet" type="text/css" href="../../css/style-atividades.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -27,26 +27,46 @@
         </header>
         <main>
             <article>
-                <h2>Conversão dolar:</h2>
+                <h2>Pesquisa de opinião:</h2>
             </article>
             <section>
                 <button id="botaoTopo"><img src="../../img/seta-cima.png" id="imagemBotaoTopo" alt="Seta para cima"></button>
                 <h2 class="cheio entrada-txt">
-                    Crie um algoritmo que converta dolar para real.
+                    Foi realizada uma pesquisa com 10 pessoas que assistiram uma peça de teatro, em relação a sua opinião sobre a mesma. Faça um algoritmo que, a partir destes dados, calcule:
                 </h2>
-                <p class="entrada-txt">E depois exiba o resuldado na tela.</p>
-                <form action="../../../controller/dolar.php" method="post">
+                <pre class="entrada-txt">
+                     - A quantidade de respostas 10; 
+                     - Média de idade das pessoas que responderam o questionário;
+                     - A percentagem de pessoas que responderam 5 ou menos para a opinião da peça;
+                     - A idade da pessoa mais velha.
+                </pre>
+                <p class="entrada-txt">E imprima na tela resultado.</p>
+                <form action="../../../controller/pesquisaRecebe.php" method="post">
                     <fieldset>
-                        <h2>Digite aqui:</h2>                       
-                        <label for="txtreal">Real:</label>
-                        <input type="number" name="txtreal" id="txtreal" step="0.001" placeholder="Insira o valor em reais" required/>
-                    </fieldset>
+                        <h2>Digite aqui:</h2>                        
+                        <?php for ($i=1; $i <= 10; $i++) { ?>
+                            <h3>Pesquisa <?= $i?>: </h3>
+
+                                <label for="identidade">Identificador:</label>
+                                <input type="text" name='ident[]' id="ident" placeholder="Digite seu Identificador"> 
+
+                                <label for="idade">Idade:</label>
+                                <input type="number" name='idade[]' id="idade" min="1" max="130" placeholder="Digite a sua Idade">
+                                
+                                <label for="nota">Nota:</label>
+                                <select name='nota[]' id="nota">
+                                    <?php for ($n=1; $n <= 10; $n++) { ?>
+                                        <option value="<?php echo $n ?>"><?php echo $n ?></option>
+                                    <?php } ?>
+                                </select>  
+                            <?php } ?>
+                        </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>
                         <button type="submit" id="enviar">Enviar</button>
                     </div>
                 </form>
-                <a class="voltar" href="../variaveis.html">Voltar</a>
+                <a class="voltar" href="../estrutura.html">Voltar</a>
             </section>    
         </main>
         <footer>

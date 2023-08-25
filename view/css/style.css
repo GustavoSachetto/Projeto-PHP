@@ -189,6 +189,10 @@ article > .alinhando  >.seta{
     transition: 1s;
 }
 
+.descricao{
+    font-size: 100px;
+}
+
 .alinhando{
     align-items: center;
 }

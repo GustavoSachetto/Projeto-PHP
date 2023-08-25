@@ -18,10 +18,14 @@
 
                     $nota1 = $_POST['txtNota1'];
                     $nota2 = $_POST['txtNota2'];
-                    $media = number_format((($nota1 + $nota2) / 2),2);
+                    $nota3 = $_POST['txtNota3'];
+                    $nota4 = $_POST['txtNota4'];
+                    
+                    $media = ($nota1 + $nota2 + $nota3 + $nota4)/4;
+                    $resultado = number_format($media, 1);
 
-                    echo "<h2>Notas digitadas: $nota1 e $nota2</h2>";
-                    echo "<p>Média calculada: $media</p>";
+                    echo "<h2>Notas digitadas: $nota1 - $nota2 - $nota3 - $nota4</h2>";
+                    echo "<p>Média calculada: $resultado</p>";
 
                 ?>
                 <a href="../view/html/atividade/media.html">Voltar</a>

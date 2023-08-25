@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../../img/logo.png">
 
-        <title>Projeto PHP - Atividade 4</title>
+        <title>Projeto PHP - Atividade 8</title>
         
         <link rel="stylesheet" type="text/css" href="../../css/style-atividades.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -27,26 +27,35 @@
         </header>
         <main>
             <article>
-                <h2>Conversão dolar:</h2>
+                <h2>Intervalo de valores:</h2>
             </article>
             <section>
                 <button id="botaoTopo"><img src="../../img/seta-cima.png" id="imagemBotaoTopo" alt="Seta para cima"></button>
                 <h2 class="cheio entrada-txt">
-                    Crie um algoritmo que converta dolar para real.
+                    Escrever um algoritmo que lê 20 valores, um de cada vez.
                 </h2>
-                <p class="entrada-txt">E depois exiba o resuldado na tela.</p>
-                <form action="../../../controller/dolar.php" method="post">
+                <pre class="entrada-txt">
+                    E conta quantos deles estão em cada um dos intervalos 
+                    [0, 24];
+                    [25, 49];
+                    [50, 74];
+                    [75, 100].
+                </pre>
+                <p class="entrada-txt">Escrevendo no final esta informação na tela.</p>
+                <form action="../../../controller/intervaloRecebe.php" method="post">
                     <fieldset>
-                        <h2>Digite aqui:</h2>                       
-                        <label for="txtreal">Real:</label>
-                        <input type="number" name="txtreal" id="txtreal" step="0.001" placeholder="Insira o valor em reais" required/>
-                    </fieldset>
+                        <h2>Digite aqui:</h2>                        
+                            <?php for ($i=1; $i <= 6; $i++) { ?>
+                                <label for="valor">Valor <?= $i?>: </label>
+                                <input type="number" name="valor[]" id="valor[]" min="1" max="100" placeholder="Digite um valor" require/>                
+                            <?php } ?>
+                        </fieldset>
                     <div class="botao">
                         <button type="reset" id="limpar">Limpar</button>
                         <button type="submit" id="enviar">Enviar</button>
                     </div>
                 </form>
-                <a class="voltar" href="../variaveis.html">Voltar</a>
+                <a class="voltar" href="../estrutura.html">Voltar</a>
             </section>    
         </main>
         <footer>

@@ -28,7 +28,7 @@
 
                     $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
-                    echo "<h2> A quantia digitada foi: " . numfmt_format_currency($padrao, $real, "BRL") . " equivalente a: <p>" . numfmt_format_currency($padrao, $dolar, "USD") ."</p></h2>";
+                    echo "<h2> A quantia digitada foi: " . numfmt_format_currency($padrao, $real, "BRL") . " equivalente a: " . numfmt_format_currency($padrao, $dolar, "USD") ."</h2>" . "<p>Cotação do dolar atualmente: ". numfmt_format_currency($padrao, $cotacao, "BRL") . "</p>";
 
                 ?>
                 <a href="../view/html/atividade/dolar.html">Voltar</a>

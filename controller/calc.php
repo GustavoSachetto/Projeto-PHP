@@ -18,16 +18,16 @@
 
                     $valor01 = $_POST['txtValor01'];
                     $valor02 = $_POST['txtValor02'];
-                    $Sub = number_format(($valor01 - $valor02),2);
-                    $Ad =  number_format(($valor01 + $valor02),2);
-                    $Multi =  number_format(($valor01 * $valor02),2);
-                    $Div =  number_format(($valor01 / $valor02),2);
+                    $subtracao = number_format(($valor01 - $valor02),2);
+                    $adicao =  number_format(($valor01 + $valor02),2);
+                    $multiplicacao =  number_format(($valor01 * $valor02),2);
+                    $divisao =  number_format(($valor01 / $valor02),2);
 
-                    echo "<h2>Valores inseridos: $valor01 , $valor02 </h2>";
-                    echo "<p>Subtração dos valores inseridos : $Sub </p>";
-                    echo "<p>Adição dos valores inseridos: $Ad </p>";
-                    echo "<p>Multiplicação dos valores inseridos: $Multi </p>";
-                    echo "<p>Divisão dos valores inseridos: $Div </p>";
+                    echo "<h2>Valores inseridos: $valor01 e $valor02 </h2>";
+                    echo "<p>Subtração dos valores inseridos: $subtracao </p>";
+                    echo "<p>Adição dos valores inseridos: $adicao </p>";
+                    echo "<p>Multiplicação dos valores inseridos: $multiplicacao </p>";
+                    echo "<p>Divisão dos valores inseridos: $divisao </p>";
 
                 ?>
                 <a href="../view/html/atividade/calc.html">Voltar</a>

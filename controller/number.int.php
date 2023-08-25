@@ -67,11 +67,8 @@
                         case '12':
                             echo '<h2>Você está em Dezembro</h2> <p>Sua estação do ano é Primavera</p> <p><img src="../view/img/atividades/primavera.png"></p>';
                             break;     
-                        
-                        default: 
-                            echo "<h2>Digite um numero valido de 1 á 12</h2>";
-                            break;
-                    }
+                    
+                        }
 
                 ?>
                 <a href="../view/html/atividade/number_int.html">Voltar</a>

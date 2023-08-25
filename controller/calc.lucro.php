@@ -20,8 +20,10 @@
                     $precoVenda = ($precoCusto /100) *150;
                     $lucro = ($precoCusto - 1.00) - 0.50;
 
-                    echo "<h2>Pretende vender o brigadeiro por : $precoVenda</h2>";
-                    echo "<p>Tendo um lucro de: $lucro</p>";
+                    $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
+
+                    echo "<h2>Pretende vender o brigadeiro por: " . numfmt_format_currency($padrao, $precoVenda, "BRL") . "</h2>";
+                    echo "<p>Tendo um lucro de: " . numfmt_format_currency($padrao, $lucro, "BRL") . "</p>";
 
                 ?>
                 <a href="../view/html/atividade/calc_lucro.html">Voltar</a>

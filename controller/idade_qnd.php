@@ -21,7 +21,7 @@
                     $resultado = $ano - $nascimento;
             
                     if ($resultado < 0) {
-                        echo "Idade Invalida!";
+                        echo "<h2>Digite os valores novamente!</h2> <p>Idade Invalida</p>";
                     }
                         elseif ($resultado < 13) {
                             echo "<h2>$nome sua idade será: $resultado anos</h2> <p>Você ainda será criança!</p>";
