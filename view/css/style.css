@@ -179,6 +179,10 @@ article > .alinhando  >.seta{
     transition: 250ms;
 }
 
+#veja2{
+    background-color: goldenrod;
+}
+
 .ex{
     border-radius: 20px;
     border: 5px solid var(--branco);
@@ -187,6 +191,32 @@ article > .alinhando  >.seta{
     margin-top: 20px;
     box-shadow: var(--sombra);
     transition: 1s;
+}
+
+.exercicios{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.extra{
+    margin-bottom: 40px;
+    font: bolder 23px var(--font-link);
+    padding: 15px 50px;
+    border-radius: 30px; 
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border: 2px solid transparent;
+    transition: 600ms;
+}
+
+.extra:hover{
+    background-color: #b4b4b4;
+    color: gray;
+    border: 2px solid gray;
 }
 
 .descricao{
@@ -422,7 +452,7 @@ section > pre{
 }
 
 .cor2{
-    color: #19177C;
+    color: #2c29c0;
     background: transparent;
 }
 
@@ -432,7 +462,7 @@ section > pre{
 }
 
 .cor4{
-     color: #BA2160;
+     color: #c72424;
      background: transparent;
 }
 
@@ -514,6 +544,16 @@ footer > a:hover{
     
     .ex{
         width: 370px;
+    }
+
+    .exercicios{
+        width: 100%;
+        padding: 0;
+    }
+
+    .extra{
+        font-size: 20px ;
+        padding: 12px 30px;
     }
 
     .entrada-img{

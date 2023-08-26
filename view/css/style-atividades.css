@@ -140,6 +140,41 @@ section{
     box-shadow: var(--sombra);
 }
 
+.codigo{
+    margin: 0 0 30px 0;
+    padding: 20px;
+    text-align: justify;
+    white-space: pre-line;
+    background-color: #f3f3f3;
+    border: 1px solid #e6e6e6;
+    font: normal 15px 'Consolas';
+}
+
+.cor1{
+    color: #ffb030;
+    background: transparent;
+}
+
+.cor2{
+    color: #2c29c0;
+    background: transparent;
+}
+
+.cor3{
+    color: #289c3c;
+    background: transparent;
+}
+
+.cor4{
+     color: #c72424;
+     background: transparent;
+}
+
+.cor5{
+    color: #67b0ec;
+    background: transparent;
+}
+
 #botaoTopo{
     display: none;
     position: fixed;
@@ -178,6 +213,11 @@ section > h2{
     padding-top: 40px;
     font-weight: bolder;
     color: var(--cinza);
+}
+
+.alinhamento{
+    font-size: 25px;
+    text-align: center;
 }
 
 section > p{
@@ -434,6 +474,18 @@ footer > a:hover{
     
     .cheio{
         font-size: 20px;
+    }
+
+    .codigo{
+        display: none;
+    }
+
+    .codigo-atividade {
+        display: none;
+    }
+
+    .alinhamento {
+        display: none;
     }
     
     section > pre{

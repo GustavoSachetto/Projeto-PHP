@@ -16,8 +16,6 @@
             <section>
                 <?php  
 
-                    
-
                     $cotacao = 5.20;
 
                     $real = $_REQUEST["txtreal"] ?? 0;

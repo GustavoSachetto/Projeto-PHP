@@ -35,6 +35,7 @@
                     Crie um algoritmo que deve ler duas variaveis. 
                 </h2>
                 <p class="entrada-txt">E mostrar na tela os valores somados, subtraidos, multiplicados e divididos.</p>
+                <h2 class="cheio">Execução do exercicio:</h2>
                 <form action="../../../controller/calc.php" method="post">
                     <fieldset>
                         <h2>Digite aqui:</h2>                       
@@ -49,6 +50,33 @@
                         <button type="submit" id="enviar">Enviar</button>
                     </div>
                 </form>
+
+                <h2 class="cheio codigo-atividade">Codigo da atividade:</h2>
+                <pre class="codigo">
+                    <mark class="cor1">&lt;?php</mark>
+                    // Armazenando valores nas variaveis
+                    <mark class="cor2">$valor01</mark> = <mark class="cor4">$_POST['txtValor01']</mark>;
+                    <mark class="cor2">$valor02</mark> = <mark class="cor4">$_POST['txtValor02']</mark>;
+                    
+                    // Calculando e formatando o resultado
+                    <mark class="cor2">$subtracao</mark> = <mark class="cor3">number_format(<mark class="cor2">($valor01 - $valor02),2</mark>)</mark>;
+                    <mark class="cor2">$adicao</mark> = <mark class="cor3">number_format(<mark class="cor2">($valor01 + $valor02),2</mark>)</mark>;
+                    <mark class="cor2">$multiplicacao</mark> = <mark class="cor3">number_format(<mark class="cor2">($valor01 * $valor02),2</mark>)</mark>;
+                    <mark class="cor2">$divisao</mark> = <mark class="cor3">number_format(<mark class="cor2">($valor01 / $valor02),2</mark>)</mark>;
+
+                    // Exibindo valores inseridos
+                    <mark class="cor3">echo</mark> "<mark class="cor4">&lt;h2> Valores inseridos:</mark><mark class="cor2">$valor01 e $valor02</mark><mark class="cor4">&lt;/h2></mark>";
+
+                    // Exibindo resultados
+                    <mark class="cor3">echo</mark> "
+                       <mark class="cor4">&lt;p> Subtração dos valores inseridos:</mark><mark class="cor2">$subtracao</mark><mark class="cor4">&lt;/p></mark>
+                       <mark class="cor4">&lt;p> Adição dos valores inseridos:</mark><mark class="cor2">$adicao</mark><mark class="cor4">&lt;/p></mark>
+                       <mark class="cor4">&lt;p> Multiplicação dos valores inseridos:</mark><mark class="cor2">$multiplicacao</mark><mark class="cor4">&lt;/p></mark>
+                       <mark class="cor4">&lt;p> Divisão dos valores inseridos:</mark><mark class="cor2">$divisao</mark><mark class="cor4">&lt;/p></mark>
+                    ";
+                    <mark class="cor1">?></mark>
+                </pre>
+
                 <a class="voltar" href="../variaveis.html">Voltar</a>
             </section>    
         </main>
