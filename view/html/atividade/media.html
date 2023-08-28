@@ -62,24 +62,24 @@
                 <h2 class="cheio alinhamento">Codigo form html (client-side):</h2>
                 <pre class="codigo">
                     
-                    &lt;<mark class="cor2">form</mark> action="../../../controller/media.php" method="post">
+                    &lt;<mark class="cor2">form</mark> action="media.php" method="post">
                        &lt;<mark class="cor2">fieldset</mark>>
                           &lt;<mark class="cor2">h2</mark>>Digite aqui:&lt;/<mark class="cor2">h2</mark>>                       
-                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota01"</mark>>Primeira nota:&lt;/<mark class="cor2">label</mark>>
-                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota1"</mark> id=<mark class="cor4">"txtNota1"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark> placeholder=<mark class="cor4">"Digite a primeira nota"</mark> required/>
+                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota1"</mark>>Primeira nota:&lt;/<mark class="cor2">label</mark>>
+                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota1"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark>required/>
                             
-                          &lt;<mark class="cor2">label</mark> for="txtNota02">Segunda nota:&lt;/<mark class="cor2">label</mark>>
-                          &lt;<mark class="cor2">input </mark>type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota2"</mark> id=<mark class="cor4">"txtNota2"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark> placeholder=<mark class="cor4">"Digite a segunda nota"</mark> required/>
+                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota2"</mark>>Segunda nota:&lt;/<mark class="cor2">label</mark>>
+                          &lt;<mark class="cor2">input </mark>type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota2"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark>required/>
     
-                          &lt;<mark class="cor2">label</mark> for="txtNota01">Terceira nota:&lt;/<mark class="cor2">label</mark>>
-                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota3"</mark> id=<mark class="cor4">"txtNota3"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark> placeholder=<mark class="cor4">"Digite a terceira nota"</mark> required/>
+                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota3"</mark>>Terceira nota:&lt;/<mark class="cor2">label</mark>>
+                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota3"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark>required/>
                             
-                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota02"</mark>>Quarta nota:&lt;/<mark class="cor2">label</mark>>
-                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota4"</mark> id=<mark class="cor4">"txtNota4"</mark> step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark> placeholder=<mark class="cor4">"Digite a quarta nota"</mark> required/>
+                          &lt;<mark class="cor2">label</mark> for=<mark class="cor4">"txtNota4"</mark>>Quarta nota:&lt;/<mark class="cor2">label</mark>>
+                          &lt;<mark class="cor2">input</mark> type=<mark class="cor4">"number"</mark> name=<mark class="cor4">"txtNota4"</mark>step=<mark class="cor4">"0.1"</mark> min=<mark class="cor4">"1"</mark> max=<mark class="cor4">"10"</mark>required/>
                        &lt;/<mark class="cor2">fieldset</mark>>
-                       &lt;<mark class="cor2">div</mark> class=<mark class="cor4">"botao"</mark>>
-                          &lt;<mark class="cor2">button</mark> type=<mark class="cor4">"reset"</mark> id=<mark class="cor4">"limpar"</mark>>Limpar&lt;/<mark class="cor2">button</mark>>
-                          &lt;<mark class="cor2">button</mark> type=<mark class="cor4">"submit"</mark> id=<mark class="cor4">"enviar"</mark>>Enviar&lt;/<mark class="cor2">button</mark>>
+                       &lt;<mark class="cor2">div</mark>>
+                          &lt;<mark class="cor2">button</mark> type=<mark class="cor4">"reset"</mark>>Limpar&lt;/<mark class="cor2">button</mark>>
+                          &lt;<mark class="cor2">button</mark> type=<mark class="cor4">"submit"</mark>>Enviar&lt;/<mark class="cor2">button</mark>>
                        &lt;/<mark class="cor2">div</mark>>
                     &lt;/<mark class="cor2">form</mark>>
                 </pre>
@@ -87,23 +87,23 @@
                 <h2 class="cheio alinhamento">Codigo php (server-side):</h2>
                 <pre class="codigo">    
                     <mark class="cor1">&lt;?php</mark>
-                       // Armazenando valores nas variaveis
-                       <mark class="cor5">$nota1</mark> = <mark class="cor4">$_POST['txtNota1']</mark>;
-                       <mark class="cor5">$nota2</mark> = <mark class="cor4">$_POST['txtNota2']</mark>;
-                       <mark class="cor5">$nota3</mark> = <mark class="cor4">$_POST['txtNota3']</mark>;
-                       <mark class="cor5">$nota4</mark> = <mark class="cor4">$_POST['txtNota4']</mark>;
-                       
-                       // Calculando a média
-                       <mark class="cor5">$media</mark> = (<mark class="cor5">$nota1</mark> + <mark class="cor5">$nota2</mark> + <mark class="cor5">$nota3</mark> + <mark class="cor5">$nota4</mark>)/4);
-                       
-                       // Formatando o resultado
-                       <mark class="cor5">$resuldado</mark> = <mark class="cor3">number_format </mark>(<mark class="cor5">$media</mark>, 1);
+                    // Armazenando valores nas variaveis
+                    <mark class="cor5">$nota1</mark> = <mark class="cor4">$_POST['txtNota1']</mark>;
+                    <mark class="cor5">$nota2</mark> = <mark class="cor4">$_POST['txtNota2']</mark>;
+                    <mark class="cor5">$nota3</mark> = <mark class="cor4">$_POST['txtNota3']</mark>;
+                    <mark class="cor5">$nota4</mark> = <mark class="cor4">$_POST['txtNota4']</mark>;
+                    
+                    // Calculando a média
+                    <mark class="cor5">$media</mark> = (<mark class="cor5">$nota1</mark> + <mark class="cor5">$nota2</mark> + <mark class="cor5">$nota3</mark> + <mark class="cor5">$nota4</mark>)/4;
+                    
+                    // Formatando o resultado
+                    <mark class="cor5">$resultado</mark> = <mark class="cor3">number_format(</mark><mark class="cor5">$media, 1</mark><mark class="cor3">)</mark>;
 
-                       // Exibindo notas digitadas
-                       <mark class="cor3">echo</mark> "<mark class="cor4">&lt;h2></mark> Notas digitadas:<mark class="cor5">$nota1</mark> - <mark class="cor5">$nota2</mark> - <mark class="cor5">$nota3</mark> - <mark class="cor5">$nota4</mark><mark class="cor4">&lt;/h2></mark>";
+                    // Exibindo notas digitadas
+                    <mark class="cor3">echo</mark> "<mark class="cor4">&lt;h2></mark> Notas digitadas: <mark class="cor5">$nota1</mark> - <mark class="cor5">$nota2</mark> - <mark class="cor5">$nota3</mark> - <mark class="cor5">$nota4</mark><mark class="cor4">&lt;/h2></mark>";
 
-                       // Exibindo média calculada
-                       <mark class="cor3">echo</mark> "<mark class="cor4">&lt;p></mark> Média calculada:<mark class="cor5">$resultado</mark><mark class="cor4">&lt;/p></mark>";
+                    // Exibindo média calculada
+                    <mark class="cor3">echo</mark> "<mark class="cor4">&lt;p></mark> Média calculada: <mark class="cor5">$resultado</mark><mark class="cor4">&lt;/p></mark>";
                     <mark class="cor1">?></mark>
                 </pre>
 
