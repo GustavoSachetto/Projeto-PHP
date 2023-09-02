@@ -14,5 +14,5 @@ __Link:__ https://gustavosachetto.000webhostapp.com/
 
 * __JS:__ Botão menu hambúrguer, botão voltar para topo, animando cartão, observando entrada de elemento na tela, e substituindo elementos html.
 
-## Tela Inicial:
+* __Tela Inicial:__
 ![inicio](https://github.com/GustavoSachetto/Projeto-PHP/assets/136517074/c54bc64d-72da-4767-ad16-b66fdce9a3e0)
