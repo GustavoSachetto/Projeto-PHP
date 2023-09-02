@@ -16,4 +16,4 @@ __Link:__ https://gustavosachetto.000webhostapp.com/
 
 * __Tela Inicial:__
   
-![inicio](https://github.com/GustavoSachetto/Projeto-PHP/assets/136517074/c54bc64d-72da-4767-ad16-b66fdce9a3e0).
+![inicio](https://github.com/GustavoSachetto/Projeto-PHP/assets/136517074/c54bc64d-72da-4767-ad16-b66fdce9a3e0)
