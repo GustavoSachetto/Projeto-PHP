@@ -237,11 +237,11 @@ ul.integrantes{
 
 .acionado{
     transform: scale(1.2);
-    transition: 500ms;
 }
 
 li{
     cursor: pointer;
+    transition: 500ms;
 }
 
 li > a{
