@@ -2,7 +2,7 @@
 
 
 # Projeto-PHP
-Esse projeto foi realizado nas aulas de Sistemas web, onde apresento alguns calculos como base a linguagem de programação PHP. **Meu papel nesse projeto foi desenvolver basicamente a parte do Front-end do site, onde eu criei toda a parte de estilização do projeto e responsividade utilizando CSS e JS, também organizei e criei algumas paginas HTML.**
+Esse projeto foi realizado nas aulas de Sistemas web, onde apresento alguns calculos como base a linguagem de programação PHP. __Meu papel nesse projeto foi desenvolver basicamente a parte de estilização do projeto e responsividade utilizando CSS e JS__, também organizei e criei algumas páginas HTML.
 
 __Link:__ https://gustavosachetto.000webhostapp.com/
 
