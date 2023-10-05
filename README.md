@@ -8,11 +8,13 @@ __Link:__ https://gustavosachetto.000webhostapp.com/
 
 ## O projeto contém: 
 
-* __HTML:__ Semântica, links internos e externos, vídeo, imagem dinâmica, autoridade de títulos e lista.
+* __HTML:__ Tags semântica, links internos e externos, iframe(vídeo), imagem dinâmica, hierarquia de títulos e lista desordenadas.
 
-* __CSS:__ Ids ,classes, pseudo-classes, pseudo-elemento, configurações de root, transferência de mídia e animações.
+* __CSS:__ Flexbox, responsividade, definição de variaveis (utilizando o root), pseudo-classes, pseudo-elementos, seletores, importações de fontes, criação de animações.
 
-* __JS:__ Botão menu hambúrguer, botão voltar para topo, animando cartão, observando entrada de elemento na tela, e substituindo elementos html.
+* __JS:__ Menu responsivo, botão voltar ao topo, animações básicas, entrada de elemento através do scroll na página, e substituição de elementos.
+
+* __PHP:__ Cálculos realizados nas atividades.
 
 ## Páginas:
 * __Inicio:__
