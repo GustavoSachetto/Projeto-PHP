@@ -16,6 +16,8 @@ __Link:__ https://gustavosachetto.000webhostapp.com/
 
 * __PHP:__ Cálculos realizados nas atividades.
 
+* __BOOTSTRAP:__ Grid, containers e botões.
+
 ## Páginas:
 * __Inicio:__
   
